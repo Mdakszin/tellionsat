@@ -10,6 +10,7 @@ const Navigation = () => {
     { to: "/", label: "Home" },
     { to: "/about", label: "About Us" },
     { to: "/programs", label: "Programs" },
+    { to: "/gallery", label: "Gallery" },
     { to: "/contact", label: "Contact" },
   ];
 
