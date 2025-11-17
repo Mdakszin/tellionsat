@@ -77,7 +77,7 @@ const Home = () => {
       <section className="py-20 bg-background">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold mb-4">Why Choose Little Stars?</h2>
+            <h2 className="text-4xl font-bold mb-4">Why Choose TelliOnSat?</h2>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
               We're committed to providing the best start for your child's learning journey
             </p>
@@ -113,7 +113,7 @@ const Home = () => {
             <div>
               <h2 className="text-4xl font-bold mb-6">Creating Happy Childhood Memories</h2>
               <p className="text-lg text-muted-foreground mb-6">
-                At Little Stars Daycare, we believe that early childhood is a magical time of growth, 
+                At TelliOnSat, we believe that early childhood is a magical time of growth, 
                 discovery, and wonder. Our experienced team creates engaging, age-appropriate activities 
                 that help children develop socially, emotionally, and academically.
               </p>
@@ -158,7 +158,7 @@ const Home = () => {
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-4xl font-bold mb-6">Ready to Join Our Family?</h2>
           <p className="text-xl mb-8 max-w-2xl mx-auto">
-            Schedule a tour today and see why parents choose Little Stars Daycare for their children
+            Schedule a tour today and see why parents choose TelliOnSat for their children
           </p>
           <Button size="lg" variant="secondary" asChild className="rounded-full text-lg px-8">
             <NavLink to="/contact">Contact Us Today</NavLink>
