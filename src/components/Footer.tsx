@@ -9,7 +9,7 @@ const Footer = () => {
           {/* About */}
           <div>
             <h3 className="text-xl font-bold mb-4 bg-gradient-cool bg-clip-text text-transparent">
-              Little Stars Daycare
+              TelliOnSat
             </h3>
             <p className="text-muted-foreground">
               Providing quality childcare and early education in a nurturing environment where every child can shine.
@@ -56,7 +56,7 @@ const Footer = () => {
         </div>
 
         <div className="border-t border-border mt-8 pt-8 text-center text-muted-foreground">
-          <p>&copy; {new Date().getFullYear()} Little Stars Daycare. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} TelliOnSat. All rights reserved.</p>
         </div>
       </div>
     </footer>

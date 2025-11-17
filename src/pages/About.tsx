@@ -54,7 +54,7 @@ const About = () => {
       {/* Hero Section */}
       <section className="py-20 bg-gradient-cool text-primary-foreground">
         <div className="container mx-auto px-4 text-center">
-          <h1 className="text-5xl font-bold mb-6">About Little Stars Daycare</h1>
+          <h1 className="text-5xl font-bold mb-6">About TelliOnSat</h1>
           <p className="text-xl max-w-3xl mx-auto">
             For over 15 years, we've been dedicated to providing exceptional early childhood 
             education in a warm, nurturing environment where every child can thrive.
@@ -69,7 +69,7 @@ const About = () => {
             <div>
               <h2 className="text-4xl font-bold mb-6">Our Mission</h2>
               <p className="text-lg text-muted-foreground mb-6">
-                At Little Stars Daycare, our mission is to provide a safe, nurturing, and stimulating 
+                At TelliOnSat, our mission is to provide a safe, nurturing, and stimulating 
                 environment where children can explore, learn, and grow. We believe that every child 
                 is unique and deserves individualized attention and care.
               </p>
@@ -100,7 +100,7 @@ const About = () => {
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold mb-4">Our Core Values</h2>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-              These principles guide everything we do at Little Stars Daycare
+              These principles guide everything we do at TelliOnSat
             </p>
           </div>
 

@@ -20,7 +20,7 @@ const Navigation = () => {
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
           <NavLink to="/" className="text-2xl font-bold bg-gradient-cool bg-clip-text text-transparent">
-            Little Stars Daycare
+            TelliOnSat
           </NavLink>
 
           {/* Desktop Navigation */}
