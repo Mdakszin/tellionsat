@@ -60,7 +60,7 @@ const Home = () => {
             Where Little Stars Shine Bright
           </h1>
           <p className="text-xl md:text-2xl mb-8 max-w-2xl mx-auto">
-            Quality childcare and early education in a nurturing, safe environment
+            English Reading and Writing Classes
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button size="lg" asChild className="rounded-full text-lg px-8">
