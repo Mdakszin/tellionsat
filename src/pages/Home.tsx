@@ -57,7 +57,7 @@ const Home = () => {
         
         <div className="relative z-10 container mx-auto px-4 text-center text-primary-foreground">
           <h1 className="text-5xl md:text-6xl font-bold mb-6 animate-float">
-            Where Little Stars Shine Bright
+            Master English Reading and Writing
           </h1>
           <p className="text-xl md:text-2xl mb-8 max-w-2xl mx-auto">
             English Reading and Writing Classes
