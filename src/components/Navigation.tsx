@@ -2,6 +2,7 @@ import { NavLink } from "./NavLink";
 import { Button } from "./ui/button";
 import { Menu, X } from "lucide-react";
 import { useState } from "react";
+import { ModeToggle } from "./mode-toggle";
 
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -35,6 +36,7 @@ const Navigation = () => {
                 {link.label}
               </NavLink>
             ))}
+            <ModeToggle />
             <Button asChild className="rounded-full">
               <NavLink to="/contact">Get Started</NavLink>
             </Button>
@@ -65,6 +67,9 @@ const Navigation = () => {
                   {link.label}
                 </NavLink>
               ))}
+              <div className="flex justify-start">
+                <ModeToggle />
+              </div>
               <Button asChild className="rounded-full w-full">
                 <NavLink to="/contact" onClick={() => setIsOpen(false)}>
                   Get Started
