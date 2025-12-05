@@ -1,73 +1,101 @@
-# Welcome to your Lovable project
+# Little Sprouts Daycare 🌱
 
-## Project info
+A modern, responsive, and delightful website built for Little Sprouts Daycare. This project features a playful design system, dark/light mode theming, and a fully functional contact form integrated with EmailJS.
 
-**URL**: https://lovable.dev/projects/296fae0e-f326-473a-86e1-38ab2278c9fe
+![Little Sprouts Daycare Banner](https://placehold.co/800x200/FACC15/292524?text=Little+Sprouts+Daycare&font=roboto)
 
-## How can I edit this code?
+## ✨ Features
 
-There are several ways of editing your application.
+- **🎨 Playful & Modern Design**: A custom "Playful" color palette (Warm Off-White, Bright Blue/Turquoise, Sunny Yellow) designed to appeal to parents and children.
+- **🌓 Dark/Light Mode**: Fully supported theme switching with system preference detection.
+- **📱 Fully Responsive**: Optimized for everything from mobile phones to large desktop screens.
+- **📧 Functional Contact Form**:
+  - Real-time validation using `zod` and `react-hook-form`.
+  - Direct email submission via **EmailJS** (no backend required).
+  - Feedback toasts for success and error states.
+- **🧩 Component-Based Architecture**: Built with reusable [ShadCN UI](https://ui.shadcn.com/) components.
 
-**Use Lovable**
+## 🛠️ Tech Stack
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/296fae0e-f326-473a-86e1-38ab2278c9fe) and start prompting.
+- **Framework**: [React](https://react.dev/) + [Vite](https://vitejs.dev/)
+- **Language**: [TypeScript](https://www.typescriptlang.org/)
+- **Styling**: [Tailwind CSS](https://tailwindcss.com/)
+- **UI Library**: [ShadCN UI](https://ui.shadcn.com/) / Radix UI
+- **Forms**: [React Hook Form](https://react-hook-form.com/) + [Zod](https://zod.dev/)
+- **Email Service**: [EmailJS](https://www.emailjs.com/)
+- **Icons**: [Lucide React](https://lucide.dev/)
 
-Changes made via Lovable will be committed automatically to this repo.
+## 🚀 Getting Started
 
-**Use your preferred IDE**
+Follow these steps to get the project running locally.
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+### Prerequisites
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+- Node.js (v18 or higher)
+- npm (v9 or higher)
 
-Follow these steps:
+### Installation
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+1.  **Clone the repository**
+    ```bash
+    git clone https://github.com/your-username/little-sprouts-daycare.git
+    cd little-sprouts-daycare
+    ```
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+2.  **Install dependencies**
+    ```bash
+    npm install
+    ```
 
-# Step 3: Install the necessary dependencies.
-npm i
+3.  **Environment Setup**
+    Create a `.env` file in the root directory to configure EmailJS.
+    ```bash
+    cp .env.example .env
+    ```
+    Populate it with your keys:
+    ```env
+    VITE_EMAILJS_SERVICE_ID=your_service_id
+    VITE_EMAILJS_TEMPLATE_ID=your_template_id
+    VITE_EMAILJS_PUBLIC_KEY=your_public_key
+    ```
+    > **Note**: You can get these keys by creating a free account at [EmailJS](https://www.emailjs.com/).
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
+4.  **Start Default Server**
+    ```bash
+    npm run dev
+    ```
+    Open [http://localhost:5173](http://localhost:5173) in your browser.
+
+## 📂 Project Structure
+
+```
+src/
+├── components/         # Reusable UI components
+│   ├── mode-toggle.tsx # Theme switcher
+│   ├── Navigation.tsx  # Main navbar
+│   └── ui/             # ShadCN UI primitives
+├── pages/              # Route pages (Home, About, Contact, etc.)
+├── schemas/            # Zod validation schemas
+├── services/           # API services (contactService.ts)
+├── App.tsx             # Main app component & routing
+└── index.css           # Global styles & Tailwind configuration
 ```
 
-**Edit a file directly in GitHub**
+## 📜 Scripts
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+- `npm run dev`: Starts the development server.
+- `npm run build`: Builds the app for production.
+- `npm run lint`: Runs ESLint to check for code quality issues.
+- `npm run preview`: Previews the production build locally.
 
-**Use GitHub Codespaces**
+## 🤝 Contributing
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+1.  Fork the Project
+2.  Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
+3.  Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
+4.  Push to the Branch (`git push origin feature/AmazingFeature`)
+5.  Open a Pull Request
 
-## What technologies are used for this project?
+## 📄 License
 
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/296fae0e-f326-473a-86e1-38ab2278c9fe) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+Distributed under the MIT License. See `LICENSE` for more information.
