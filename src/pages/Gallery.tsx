@@ -1,11 +1,7 @@
 import { useState } from "react";
 import classroomImg from "@/assets/gallery-classroom.jpg";
 import playgroundImg from "@/assets/gallery-playground.jpg";
-import naproomImg from "@/assets/gallery-naproom.jpg";
 import artroomImg from "@/assets/gallery-artroom.jpg";
-import cafeteriaImg from "@/assets/gallery-cafeteria.jpg";
-import receptionImg from "@/assets/gallery-reception.jpg";
-import musicImg from "@/assets/gallery-music.jpg";
 import outdoorImg from "@/assets/gallery-outdoor.jpg";
 import { Dialog, DialogContent } from "@/components/ui/dialog";
 import { X } from "lucide-react";
@@ -25,29 +21,9 @@ const Gallery = () => {
       description: "Safe and fun outdoor play equipment for active learning",
     },
     {
-      src: naproomImg,
-      title: "Cozy Nap Room",
-      description: "Peaceful rest areas for our little ones",
-    },
-    {
       src: artroomImg,
       title: "Creative Art Activities",
       description: "Hands-on creative expression and artistic exploration",
-    },
-    {
-      src: cafeteriaImg,
-      title: "Cheerful Cafeteria",
-      description: "Bright dining area serving nutritious meals",
-    },
-    {
-      src: receptionImg,
-      title: "Welcoming Reception",
-      description: "Friendly entrance area for parents and visitors",
-    },
-    {
-      src: musicImg,
-      title: "Music & Movement",
-      description: "Joyful music sessions and movement activities",
     },
     {
       src: outdoorImg,

@@ -2,8 +2,8 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { NavLink } from "@/components/NavLink";
 import { Heart, Users, BookOpen, Shield } from "lucide-react";
-import heroImage from "@/assets/hero-daycare.jpg";
-import childrenPlaying from "@/assets/children-playing.jpg";
+import heroVideo from "@/assets/hero-daycare.mp4";
+
 
 const Home = () => {
   const features = [
@@ -48,13 +48,19 @@ const Home = () => {
     <div className="min-h-screen">
       {/* Hero Section */}
       <section className="relative h-[600px] flex items-center justify-center overflow-hidden">
-        <div 
-          className="absolute inset-0 bg-cover bg-center"
-          style={{ backgroundImage: `url(${heroImage})` }}
-        >
+        <div className="absolute inset-0 overflow-hidden">
+          <video
+            autoPlay
+            loop
+            muted
+            playsInline
+            className="absolute inset-0 w-full h-full object-cover"
+          >
+            <source src={heroVideo} type="video/mp4" />
+          </video>
           <div className="absolute inset-0 bg-gradient-to-r from-primary/90 to-primary/70" />
         </div>
-        
+
         <div className="relative z-10 container mx-auto px-4 text-center text-primary-foreground">
           <h1 className="text-5xl md:text-6xl font-bold mb-6 animate-float">
             Master English Reading and Writing
@@ -100,35 +106,7 @@ const Home = () => {
       </section>
 
       {/* About Preview Section */}
-      <section className="py-20 bg-muted">
-        <div className="container mx-auto px-4">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <div>
-              <img 
-                src={childrenPlaying} 
-                alt="Children playing at daycare" 
-                className="rounded-3xl shadow-soft w-full"
-              />
-            </div>
-            <div>
-              <h2 className="text-4xl font-bold mb-6">Creating Happy Childhood Memories</h2>
-              <p className="text-lg text-muted-foreground mb-6">
-                At TelliOnSat, we believe that early childhood is a magical time of growth, 
-                discovery, and wonder. Our experienced team creates engaging, age-appropriate activities 
-                that help children develop socially, emotionally, and academically.
-              </p>
-              <p className="text-lg text-muted-foreground mb-8">
-                We maintain small class sizes to ensure every child receives individual attention and care. 
-                Our facilities are designed to be both fun and educational, with dedicated areas for different 
-                types of play and learning.
-              </p>
-              <Button size="lg" asChild className="rounded-full">
-                <NavLink to="/about">Learn More About Us</NavLink>
-              </Button>
-            </div>
-          </div>
-        </div>
-      </section>
+
 
       {/* Testimonials Section */}
       <section className="py-20 bg-background">

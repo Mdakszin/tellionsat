@@ -28,7 +28,7 @@ const Programs = () => {
         "Small group sizes (1:6 ratio)",
         "Potty training support",
         "Language development activities",
-        "Creative arts and music",
+        "Creative arts",
         "Outdoor play and gross motor activities",
       ],
       schedule: "Monday-Friday, 7:00 AM - 6:00 PM",
@@ -99,7 +99,7 @@ const Programs = () => {
                 </CardHeader>
                 <CardContent className="pt-6">
                   <p className="text-lg text-muted-foreground mb-6">{program.description}</p>
-                  
+
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                     <div>
                       <h4 className="font-semibold text-lg mb-3">Program Features:</h4>
@@ -112,7 +112,7 @@ const Programs = () => {
                         ))}
                       </ul>
                     </div>
-                    
+
                     <div>
                       <h4 className="font-semibold text-lg mb-3 flex items-center gap-2">
                         <Calendar className="text-primary" size={20} />
