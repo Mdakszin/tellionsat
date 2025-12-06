@@ -3,6 +3,7 @@ import { Button } from "./ui/button";
 import { Menu, X } from "lucide-react";
 import { useState } from "react";
 import { ModeToggle } from "./mode-toggle";
+import logoImg from "@/assets/tellionsat_logo-removebg-preview.png";
 
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -20,8 +21,12 @@ const Navigation = () => {
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
-          <NavLink to="/" className="text-2xl font-bold bg-gradient-cool bg-clip-text text-transparent">
-            TelliOnSat
+          <NavLink to="/" className="flex items-center">
+            <img
+              src={logoImg}
+              alt="TelliOnSat Logo"
+              className="h-12 w-auto object-contain"
+            />
           </NavLink>
 
           {/* Desktop Navigation */}
