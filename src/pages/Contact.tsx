@@ -85,7 +85,7 @@ const Contact = () => {
                         <FormItem>
                           <FormLabel>Your Name *</FormLabel>
                           <FormControl>
-                            <Input placeholder="John Smith" {...field} />
+                            <Input placeholder="John Smith" autoComplete="name" {...field} />
                           </FormControl>
                           <FormMessage />
                         </FormItem>
@@ -99,7 +99,7 @@ const Contact = () => {
                         <FormItem>
                           <FormLabel>Email Address *</FormLabel>
                           <FormControl>
-                            <Input placeholder="john@example.com" type="email" {...field} />
+                            <Input placeholder="john@example.com" type="email" autoComplete="email" {...field} />
                           </FormControl>
                           <FormMessage />
                         </FormItem>
@@ -113,7 +113,7 @@ const Contact = () => {
                         <FormItem>
                           <FormLabel>Phone Number</FormLabel>
                           <FormControl>
-                            <Input placeholder="(555) 123-4567" type="tel" {...field} />
+                            <Input placeholder="(555) 123-4567" type="tel" autoComplete="tel" {...field} />
                           </FormControl>
                           <FormMessage />
                         </FormItem>
