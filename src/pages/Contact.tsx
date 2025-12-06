@@ -176,7 +176,7 @@ const Contact = () => {
                     <div>
                       <h3 className="text-xl font-semibold mb-2">Phone</h3>
                       <p className="text-muted-foreground">(555) 123-4567</p>
-                      <p className="text-sm text-muted-foreground mt-1">Monday - Friday, 7:00 AM - 6:00 PM</p>
+                      <p className="text-muted-foreground">Monday - Friday: 13:00 - 17:00</p>
                     </div>
                   </div>
                 </CardContent>

@@ -31,7 +31,7 @@ const Programs = () => {
         "Creative arts",
         "Outdoor play and gross motor activities",
       ],
-      schedule: "Monday-Friday, 7:00 AM - 6:00 PM",
+      schedule: "Monday-Friday, 13:00 - 17:00",
     },
     {
       icon: GraduationCap,
@@ -165,16 +165,12 @@ const Programs = () => {
             <CardContent className="pt-6">
               <div className="space-y-4">
                 {[
-                  { time: "7:00 - 8:30 AM", activity: "Arrival & Free Play" },
-                  { time: "8:30 - 9:00 AM", activity: "Breakfast & Circle Time" },
-                  { time: "9:00 - 10:00 AM", activity: "Learning Centers & Activities" },
-                  { time: "10:00 - 10:30 AM", activity: "Outdoor Play" },
-                  { time: "10:30 - 11:30 AM", activity: "Structured Learning Time" },
-                  { time: "11:30 AM - 12:00 PM", activity: "Lunch" },
-                  { time: "12:00 - 2:30 PM", activity: "Quiet Time / Rest" },
-                  { time: "2:30 - 3:00 PM", activity: "Snack & Story Time" },
-                  { time: "3:00 - 4:30 PM", activity: "Creative Activities & Centers" },
-                  { time: "4:30 - 6:00 PM", activity: "Outdoor Play & Departure" },
+                  { time: "13:00 - 13:30", activity: "Arrival & Free Play" },
+                  { time: "13:30 - 14:15", activity: "English Reading & Writing" },
+                  { time: "14:15 - 15:00", activity: "Creative Arts & Activities" },
+                  { time: "15:00 - 15:30", activity: "Snack & Break" },
+                  { time: "15:30 - 16:30", activity: "Group Projects & Learning" },
+                  { time: "16:30 - 17:00", activity: "Quiet Time & Departure" },
                 ].map((item, index) => (
                   <div key={index} className="flex justify-between items-center border-b border-border pb-3 last:border-0">
                     <span className="font-semibold text-primary">{item.time}</span>
