@@ -28,6 +28,7 @@ export const contactService = {
                     phone: data.phone || "Not provided",
                     childAge: data.childAge || "Not provided",
                     message: data.message,
+                    to_email: "mdakszin@gmail.com",
                 },
                 publicKey
             );

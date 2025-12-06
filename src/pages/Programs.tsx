@@ -1,7 +1,8 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { NavLink } from "@/components/NavLink";
-import { Baby, Smile, GraduationCap, Calendar } from "lucide-react";
+import { Baby, Smile, GraduationCap, Calendar, BookOpen, Award } from "lucide-react";
+import heroVideo from "@/assets/hero-programs.mp4";
 
 const Programs = () => {
   const programs = [
@@ -47,6 +48,34 @@ const Programs = () => {
       ],
       schedule: "Half-day and full-day options available",
     },
+    {
+      icon: BookOpen,
+      title: "Primary School Program",
+      ageRange: "6 - 12 years",
+      description: "Building a strong foundation in literacy, numeracy, and critical thinking through engaging, student-centered learning.",
+      features: [
+        "Core subject mastery (Math, English, Science)",
+        "Homework assistance and tutoring",
+        "Project-based learning activities",
+        "Character building and social skills",
+        "Educational games and technology",
+      ],
+      schedule: "Monday-Friday, 13:00 - 17:00",
+    },
+    {
+      icon: Award,
+      title: "Early High School",
+      ageRange: "13 - 15 years",
+      description: "Advanced academic support and skill development to prepare students for senior high school and future success.",
+      features: [
+        "Subject-specific tutoring",
+        "Exam preparation strategies",
+        "Leadership development",
+        "Career exploration workshops",
+        "Study skills and time management",
+      ],
+      schedule: "Monday-Friday, 13:00 - 17:00",
+    },
   ];
 
   const additionalServices = [
@@ -71,10 +100,24 @@ const Programs = () => {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="py-20 bg-gradient-warm">
-        <div className="container mx-auto px-4 text-center">
+      {/* Hero Section */}
+      <section className="relative h-[600px] flex items-center justify-center overflow-hidden">
+        <div className="absolute inset-0 overflow-hidden">
+          <video
+            autoPlay
+            loop
+            muted
+            playsInline
+            className="absolute inset-0 w-full h-full object-cover"
+          >
+            <source src={heroVideo} type="video/mp4" />
+          </video>
+          <div className="absolute inset-0 bg-gradient-to-r from-primary/90 to-primary/70" />
+        </div>
+
+        <div className="relative z-10 container mx-auto px-4 text-center text-primary-foreground">
           <h1 className="text-5xl font-bold mb-6">Our Programs</h1>
-          <p className="text-xl max-w-3xl mx-auto text-foreground">
+          <p className="text-xl max-w-3xl mx-auto">
             Age-appropriate programs designed to nurture every stage of your child's early development
           </p>
         </div>

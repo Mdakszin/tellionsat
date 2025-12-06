@@ -1,5 +1,6 @@
 import { NavLink } from "./NavLink";
 import { Mail, Phone, MapPin } from "lucide-react";
+import logoImg from "../assets/tellionsat_logo-removebg-preview.png";
 
 const Footer = () => {
   return (
@@ -9,6 +10,11 @@ const Footer = () => {
           {/* About */}
           <div>
             <h3 className="text-xl font-bold mb-4 bg-gradient-cool bg-clip-text text-transparent">
+              <img
+              src={logoImg}
+              alt="TelliOnSat Logo"
+              className="h-12 w-auto object-contain"
+            />
               TelliOnSat
             </h3>
             <p className="text-muted-foreground">
