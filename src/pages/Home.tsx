@@ -32,7 +32,7 @@ const Home = () => {
   const testimonials = [
     {
       name: "Sarah Johnson",
-      text: "Little Stars has been amazing for our daughter. She's learning so much and always excited to go!",
+      text: "Tellionsat has been amazing for our daughter. She's learning so much and always excited to go!",
     },
     {
       name: "Michael Chen",
@@ -114,7 +114,7 @@ const Home = () => {
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold mb-4">What Parents Say</h2>
             <p className="text-xl text-muted-foreground">
-              Hear from families who trust us with their little stars
+              Hear from families who trust us with their little ones
             </p>
           </div>
 

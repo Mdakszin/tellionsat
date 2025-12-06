@@ -134,7 +134,7 @@ const Programs = () => {
           <div className="text-center mb-12">
             <h2 className="text-4xl font-bold mb-4">Additional Services</h2>
             <p className="text-xl text-muted-foreground">
-              Extra support and resources for our Little Stars families
+              Extra support and resources for our Tellionsat families
             </p>
           </div>
 
@@ -157,7 +157,7 @@ const Programs = () => {
           <div className="text-center mb-12">
             <h2 className="text-4xl font-bold mb-4">Sample Daily Schedule</h2>
             <p className="text-xl text-muted-foreground">
-              A typical day at Little Stars (Preschool Program)
+              A typical day at Tellionsat (Preschool Program)
             </p>
           </div>
 

@@ -1,8 +1,8 @@
-# Little Sprouts Daycare 🌱
+# Tellionsat 🌱
 
-A modern, responsive, and delightful website built for Little Sprouts Daycare. This project features a playful design system, dark/light mode theming, and a fully functional contact form integrated with EmailJS.
+A modern, responsive, and delightful website built for Tellionsat. This project features a playful design system, dark/light mode theming, and a fully functional contact form integrated with EmailJS.
 
-![Little Sprouts Daycare Banner](https://placehold.co/800x200/FACC15/292524?text=Little+Sprouts+Daycare&font=roboto)
+![Tellionsat Banner](https://placehold.co/800x200/FACC15/292524?text=Tellionsat&font=roboto)
 
 ## ✨ Features
 
@@ -38,8 +38,8 @@ Follow these steps to get the project running locally.
 
 1.  **Clone the repository**
     ```bash
-    git clone https://github.com/your-username/little-sprouts-daycare.git
-    cd little-sprouts-daycare
+    git clone https://github.com/your-username/tellionsat.git
+    cd tellionsat
     ```
 
 2.  **Install dependencies**
