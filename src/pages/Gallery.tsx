@@ -5,6 +5,7 @@ import artroomImg from "@/assets/gallery-artroom.jpg";
 import outdoorImg from "@/assets/gallery-outdoor.jpg";
 import { Dialog, DialogContent } from "@/components/ui/dialog";
 import { X } from "lucide-react";
+import { GalleryCarousel } from "@/components/GalleryCarousel";
 
 const Gallery = () => {
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
@@ -46,33 +47,15 @@ const Gallery = () => {
         </div>
       </section>
 
-      {/* Gallery Grid */}
+      {/* Gallery Carousel */}
       <section className="py-16 bg-background">
         <div className="container mx-auto px-4">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {galleryItems.map((item, index) => (
-              <div
-                key={index}
-                className="group relative overflow-hidden rounded-xl shadow-soft hover:shadow-elegant transition-all duration-300 cursor-pointer animate-fade-in hover-scale"
-                style={{ animationDelay: `${index * 100}ms` }}
-                onClick={() => setSelectedImage(item.src)}
-              >
-                <div className="aspect-[4/3] overflow-hidden">
-                  <img
-                    src={item.src}
-                    alt={item.title}
-                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
-                  />
-                </div>
-                <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                  <div className="absolute bottom-0 left-0 right-0 p-6 text-white transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
-                    <h3 className="text-xl font-bold mb-2">{item.title}</h3>
-                    <p className="text-sm text-white/90">{item.description}</p>
-                  </div>
-                </div>
-              </div>
-            ))}
-          </div>
+          <GalleryCarousel images={galleryItems} />
+
+          {/* Optional: Keep the grid below or remove it? User said "use a carousel", usually implies replacement or main feature. 
+              I'll keep the grid as a "Everything at a glance" section below, or maybe just replace it.
+              Let's replace the grid entirely as per "use a carousel for gallery images" request to avoid duplication.
+          */}
         </div>
       </section>
 
