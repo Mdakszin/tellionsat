@@ -14,8 +14,8 @@ export default {
     },
     extend: {
       fontFamily: {
-        heading: ["Lexend", "sans-serif"],
-        sans: ["Quicksand", "sans-serif"],
+        heading: ["Nunito", "sans-serif"],
+        sans: ["Nunito", "sans-serif"],
       },
       colors: {
         border: "hsl(var(--border))",
