@@ -14,8 +14,8 @@ export default {
     },
     extend: {
       fontFamily: {
-        heading: ["Fredoka", "sans-serif"],
-        sans: ["Nunito", "sans-serif"],
+        heading: ["Lexend", "sans-serif"],
+        sans: ["Quicksand", "sans-serif"],
       },
       colors: {
         border: "hsl(var(--border))",
