@@ -4,46 +4,47 @@
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    /* Pure White */
-    --foreground: 180 100% 0.2%;
-    /* Black (#000101) */
+    --background: 60 30% 98%;
+    /* Warm Paper White */
+    --foreground: 200 50% 15%;
+    /* Dark Blue-Grey text */
 
     --card: 0 0% 100%;
-    --card-foreground: 180 100% 0.2%;
+    --card-foreground: 200 50% 15%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 180 100% 0.2%;
+    --popover-foreground: 200 50% 15%;
 
-    /* Primary: #FF5757 -> 0 100% 67% (Red/Coral) */
-    --primary: 0 100% 67%;
-    --primary-foreground: 180 100% 0.2%;
-    /* Black text on bright red */
+    /* Primary: Playful Blue */
+    --primary: 200 95% 50%;
+    --primary-foreground: 0 0% 100%;
 
-    /* Secondary: #7FD857 -> 101 64% 59% (Light Green) */
-    --secondary: 101 64% 59%;
-    --secondary-foreground: 180 100% 0.2%;
+    /* Secondary: Sunshine Yellow */
+    --secondary: 45 95% 55%;
+    --secondary-foreground: 200 50% 15%;
+    /* Dark text on yellow */
 
-    --muted: 101 20% 96%;
-    --muted-foreground: 0 0% 45%;
+    --muted: 200 20% 96%;
+    --muted-foreground: 200 20% 40%;
 
-    /* Accent: Black for contrast elements */
-    --accent: 180 100% 0.2%;
-    --accent-foreground: 0 0% 98%;
+    /* Accent: Grass Green */
+    --accent: 90 85% 55%;
+    --accent-foreground: 200 50% 15%;
 
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 0 0% 98%;
+    /* Destructive: Coral Red */
+    --destructive: 0 85% 65%;
+    --destructive-foreground: 0 0% 100%;
 
-    --border: 0 0% 90%;
-    --input: 0 0% 90%;
-    --ring: 0 100% 67%;
+    --border: 200 20% 90%;
+    --input: 200 20% 90%;
+    --ring: 200 95% 50%;
 
     --radius: 1rem;
 
-    /* Updated Gradients */
-    --gradient-warm: linear-gradient(135deg, hsl(0 100% 67%) 0%, hsl(0 100% 75%) 100%);
-    --gradient-cool: linear-gradient(135deg, hsl(101 64% 59%) 0%, hsl(101 64% 45%) 100%);
-    --shadow-soft: 0 10px 40px -15px hsl(0 100% 67% / 0.2);
+    /* Child-friendly Gradients */
+    --gradient-warm: linear-gradient(135deg, hsl(45 95% 55%) 0%, hsl(0 85% 65%) 100%);
+    --gradient-cool: linear-gradient(135deg, hsl(200 95% 50%) 0%, hsl(90 85% 55%) 100%);
+    --shadow-soft: 0 10px 40px -15px hsl(200 95% 50% / 0.2);
 
     --sidebar-background: 0 0% 98%;
     --sidebar-foreground: 240 5.3% 26.1%;
@@ -56,40 +57,39 @@
   }
 
   .dark {
-    /* Dark Mode using #000101 as base */
-    --background: 180 100% 0.2%;
-    --foreground: 0 0% 98%;
+    /* Dark Mode: Deep Navy Background */
+    --background: 220 40% 10%;
+    --foreground: 60 30% 98%;
 
-    --card: 180 20% 5%;
-    /* Slightly lighter black */
-    --card-foreground: 0 0% 98%;
+    --card: 220 40% 15%;
+    --card-foreground: 60 30% 98%;
 
-    --popover: 180 20% 5%;
-    --popover-foreground: 0 0% 98%;
+    --popover: 220 40% 15%;
+    --popover-foreground: 60 30% 98%;
 
-    /* Keep vibrant colors in dark mode */
-    --primary: 0 100% 67%;
-    --primary-foreground: 180 100% 0.2%;
+    /* Keep vibrant colors in dark mode but slightly adjusted */
+    --primary: 200 90% 60%;
+    --primary-foreground: 0 0% 100%;
 
-    --secondary: 101 64% 59%;
-    --secondary-foreground: 180 100% 0.2%;
+    --secondary: 45 90% 60%;
+    --secondary-foreground: 220 40% 10%;
 
-    --muted: 0 0% 15%;
-    --muted-foreground: 0 0% 70%;
+    --muted: 220 30% 20%;
+    --muted-foreground: 220 20% 70%;
 
-    --accent: 0 0% 15%;
-    --accent-foreground: 0 0% 98%;
+    --accent: 90 80% 60%;
+    --accent-foreground: 220 40% 10%;
 
-    --destructive: 0 62.8% 50%;
-    --destructive-foreground: 0 0% 98%;
+    --destructive: 0 80% 70%;
+    --destructive-foreground: 0 0% 100%;
 
-    --border: 0 0% 20%;
-    --input: 0 0% 20%;
-    --ring: 0 100% 67%;
+    --border: 220 30% 25%;
+    --input: 220 30% 25%;
+    --ring: 200 90% 60%;
 
-    --gradient-warm: linear-gradient(135deg, hsl(0 100% 60%) 0%, hsl(0 100% 75%) 100%);
-    --gradient-cool: linear-gradient(135deg, hsl(101 64% 50%) 0%, hsl(101 64% 65%) 100%);
-    --shadow-soft: 0 10px 40px -15px hsl(0 100% 67% / 0.25);
+    --gradient-warm: linear-gradient(135deg, hsl(45 90% 50%) 0%, hsl(0 80% 60%) 100%);
+    --gradient-cool: linear-gradient(135deg, hsl(200 90% 50%) 0%, hsl(90 80% 50%) 100%);
+    --shadow-soft: 0 10px 40px -15px hsl(200 90% 60% / 0.25);
 
     --sidebar-background: 240 5.9% 10%;
     --sidebar-foreground: 240 4.8% 95.9%;
@@ -112,7 +112,16 @@
   }
 
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground font-sans;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-heading;
   }
 
   /* Custom Scrollbar */
