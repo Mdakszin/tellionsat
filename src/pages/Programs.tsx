@@ -1,39 +1,12 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { NavLink } from "@/components/NavLink";
-import { Baby, Smile, GraduationCap, Calendar, BookOpen, Award } from "lucide-react";
+import { GraduationCap, Calendar, BookOpen, Award } from "lucide-react";
 import heroVideo from "@/assets/hero-programs.mp4";
 
 const Programs = () => {
   const programs = [
-    {
-      icon: Baby,
-      title: "Infant Care",
-      ageRange: "6 weeks - 18 months",
-      description: "Gentle, responsive care for your littlest stars. We provide a calm, nurturing environment with individualized attention to each baby's needs and schedule.",
-      features: [
-        "Low caregiver-to-infant ratio (1:3)",
-        "Daily reports and photos for parents",
-        "Safe sleep practices",
-        "Age-appropriate sensory activities",
-        "Flexible feeding schedules",
-      ],
-      schedule: "Full-time and part-time options available",
-    },
-    {
-      icon: Smile,
-      title: "Toddler Program",
-      ageRange: "18 months - 3 years",
-      description: "Active exploration and discovery for growing toddlers. We encourage independence, social skills, and early learning through play-based activities.",
-      features: [
-        "Small group sizes (1:6 ratio)",
-        "Potty training support",
-        "Language development activities",
-        "Creative arts",
-        "Outdoor play and gross motor activities",
-      ],
-      schedule: "Monday-Friday, 13:00 - 17:00",
-    },
+
     {
       icon: GraduationCap,
       title: "Preschool Program",
