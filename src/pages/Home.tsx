@@ -3,6 +3,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { NavLink } from "@/components/NavLink";
 import { Heart, Users, BookOpen, Shield } from "lucide-react";
 import heroVideo from "@/assets/hero-daycare.mp4";
+import { TypewriterEffect } from "@/components/TypewriterEffect";
 
 
 const Home = () => {
@@ -63,7 +64,7 @@ const Home = () => {
 
         <div className="relative z-10 container mx-auto px-4 text-center text-primary-foreground">
           <h1 className="text-5xl md:text-6xl font-bold mb-6 animate-float">
-            Master English Reading and Writing
+            Master English <TypewriterEffect words={["Reading", "Writing"]} />
           </h1>
           <p className="text-xl md:text-2xl mb-8 max-w-2xl mx-auto">
             English Reading and Writing Classes
