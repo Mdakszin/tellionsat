@@ -15,20 +15,20 @@
     --popover: 0 0% 100%;
     --popover-foreground: 0 0% 15%;
 
-    /* Primary: Bright Sunshine Yellow */
-    --primary: 48 100% 50%;
-    --primary-foreground: 0 0% 10%;
-    /* Dark text on bright yellow */
+    /* Primary: Azure Blue */
+    --primary: 220 90% 60%;
+    --primary-foreground: 0 0% 100%;
+    /* White text on bright blue */
 
-    /* Secondary: Soft Gray/White Accent */
-    --secondary: 0 0% 96%;
-    --secondary-foreground: 0 0% 15%;
+    /* Secondary: Soft Sunshine */
+    --secondary: 45 95% 60%;
+    --secondary-foreground: 0 0% 10%;
 
     --muted: 0 0% 96%;
     --muted-foreground: 0 0% 45%;
 
-    /* Accent: Soft Blue for variety */
-    --accent: 200 95% 50%;
+    /* Accent: Fresh Mint */
+    --accent: 160 80% 45%;
     --accent-foreground: 0 0% 100%;
 
     --destructive: 0 85% 60%;
@@ -36,14 +36,14 @@
 
     --border: 0 0% 90%;
     --input: 0 0% 90%;
-    --ring: 48 100% 50%;
+    --ring: 220 90% 60%;
 
     --radius: 1rem;
 
     /* Bright & Cheerful Gradients */
-    --gradient-warm: linear-gradient(135deg, hsl(48 100% 50%) 0%, hsl(35 100% 60%) 100%);
-    --gradient-cool: linear-gradient(135deg, hsl(0 0% 100%) 0%, hsl(48 100% 90%) 100%);
-    --shadow-soft: 0 10px 40px -15px hsl(48 100% 50% / 0.2);
+    --gradient-warm: linear-gradient(135deg, hsl(45 95% 60%) 0%, hsl(220 90% 60%) 100%);
+    --gradient-cool: linear-gradient(135deg, hsl(220 90% 60%) 0%, hsl(160 80% 45%) 100%);
+    --shadow-soft: 0 10px 40px -15px hsl(220 90% 60% / 0.2);
 
     --sidebar-background: 0 0% 98%;
     --sidebar-foreground: 240 5.3% 26.1%;
@@ -66,29 +66,29 @@
     --popover: 220 20% 15%;
     --popover-foreground: 0 0% 98%;
 
-    /* Keep bright yellow primary in dark mode for pop */
-    --primary: 48 100% 50%;
-    --primary-foreground: 0 0% 10%;
+    /* Keep Azure primary in dark mode */
+    --primary: 220 90% 60%;
+    --primary-foreground: 0 0% 100%;
 
-    --secondary: 220 20% 20%;
-    --secondary-foreground: 0 0% 98%;
+    --secondary: 45 95% 60%;
+    --secondary-foreground: 0 0% 10%;
 
     --muted: 220 20% 20%;
     --muted-foreground: 220 20% 70%;
 
-    --accent: 200 80% 60%;
-    --accent-foreground: 0 0% 10%;
+    --accent: 160 80% 45%;
+    --accent-foreground: 0 0% 100%;
 
     --destructive: 0 80% 60%;
     --destructive-foreground: 0 0% 100%;
 
     --border: 220 20% 25%;
     --input: 220 20% 25%;
-    --ring: 48 100% 50%;
+    --ring: 220 90% 60%;
 
-    --gradient-warm: linear-gradient(135deg, hsl(48 100% 45%) 0%, hsl(35 100% 55%) 100%);
-    --gradient-cool: linear-gradient(135deg, hsl(220 20% 15%) 0%, hsl(220 20% 25%) 100%);
-    --shadow-soft: 0 10px 40px -15px hsl(48 100% 50% / 0.2);
+    --gradient-warm: linear-gradient(135deg, hsl(45 95% 60%) 0%, hsl(220 90% 60%) 100%);
+    --gradient-cool: linear-gradient(135deg, hsl(220 90% 60%) 0%, hsl(160 80% 45%) 100%);
+    --shadow-soft: 0 10px 40px -15px hsl(220 90% 60% / 0.2);
 
     --sidebar-background: 240 5.9% 10%;
     --sidebar-foreground: 240 4.8% 95.9%;
