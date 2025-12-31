@@ -51,24 +51,7 @@ const Programs = () => {
     },
   ];
 
-  const additionalServices = [
-    {
-      title: "Extended Hours",
-      description: "Early drop-off and late pick-up available for working families",
-    },
-    {
-      title: "Nutritious Meals",
-      description: "Healthy breakfast, lunch, and snacks included in tuition",
-    },
-    {
-      title: "Summer Camp",
-      description: "Special summer programming for enrolled children",
-    },
-    {
-      title: "Parent Resources",
-      description: "Regular newsletters, workshops, and family events",
-    },
-  ];
+
 
   return (
     <div className="min-h-screen">
@@ -144,28 +127,7 @@ const Programs = () => {
         </div>
       </section>
 
-      {/* Additional Services */}
-      <section className="py-20 bg-muted">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-12">
-            <h2 className="text-4xl font-bold mb-4">Additional Services</h2>
-            <p className="text-xl text-muted-foreground">
-              Extra support and resources for our Tellionsat families
-            </p>
-          </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {additionalServices.map((service, index) => (
-              <Card key={index} className="text-center hover:shadow-soft transition-shadow">
-                <CardContent className="pt-6">
-                  <h3 className="text-lg font-semibold mb-2">{service.title}</h3>
-                  <p className="text-muted-foreground text-sm">{service.description}</p>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
-        </div>
-      </section>
 
       {/* Daily Schedule Sample */}
       <section className="py-20 bg-background">
